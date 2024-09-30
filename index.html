@@ -4,46 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới thiệu các ngành nghề</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f8f9fa;
+            background-color: #f0f0f0;
             color: #333;
         }
         header {
-            background-image: url('https://source.unsplash.com/1600x900/?business,finance');
-            background-size: cover;
-            background-position: center;
+            background-color: #2c3e50;
             color: white;
-            padding: 100px 20px;
+            padding: 20px;
             text-align: center;
-            font-size: 2.5rem;
-            font-weight: 600;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         nav {
-            background-color: #1abc9c;
-            padding: 15px;
+            background-color: #34495e;
+            padding: 10px;
             text-align: center;
         }
         nav a {
             color: white;
-            margin: 0 20px;
+            margin: 0 15px;
             text-decoration: none;
-            font-weight: 500;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #ecf0f1;
+            font-weight: bold;
         }
         section {
-            padding: 40px 20px;
-            text-align: center;
+            padding: 20px;
         }
         h1, h2 {
             color: #2980b9;
@@ -51,38 +39,24 @@
         .career {
             margin-bottom: 30px;
         }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
         .card {
             background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-        }
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
             padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        footer p {
-            margin: 0;
-            font-weight: 300;
-        }
-        .career-icon {
-            font-size: 3rem;
-            color: #2980b9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
     </style>
@@ -102,7 +76,6 @@
     <div class="container">
         <section id="ke-toan" class="career">
             <div class="card">
-                <div class="career-icon">💼</div>
                 <h2>Kế toán</h2>
                 <p>Kế toán là công việc ghi chép, xử lý và phân tích thông tin tài chính của doanh nghiệp. Kế toán viên có nhiệm vụ tổng hợp số liệu và lập báo cáo tài chính.</p>
             </div>
@@ -110,7 +83,6 @@
 
         <section id="kiem-toan" class="career">
             <div class="card">
-                <div class="career-icon">🧾</div>
                 <h2>Kiểm toán</h2>
                 <p>Kiểm toán là quá trình kiểm tra và xác nhận tính chính xác của báo cáo tài chính của một tổ chức. Kiểm toán viên làm việc để đảm bảo rằng các báo cáo này phản ánh đúng tình hình tài chính của tổ chức.</p>
             </div>
@@ -118,7 +90,6 @@
 
         <section id="tai-chinh-ngan-hang" class="career">
             <div class="card">
-                <div class="career-icon">💰</div>
                 <h2>Tài chính - Ngân hàng</h2>
                 <p>Ngành Tài chính - Ngân hàng bao gồm các hoạt động liên quan đến đầu tư, quản lý tài sản, phân tích tài chính, và điều hành ngân hàng. Đây là một lĩnh vực đa dạng và có nhiều cơ hội phát triển.</p>
             </div>
@@ -126,7 +97,6 @@
 
         <section id="quan-tri-kinh-doanh" class="career">
             <div class="card">
-                <div class="career-icon">📊</div>
                 <h2>Quản trị Kinh doanh</h2>
                 <p>Quản trị Kinh doanh là lĩnh vực nghiên cứu và áp dụng các phương pháp quản lý nhằm đạt được hiệu quả cao trong hoạt động kinh doanh. Ngành này yêu cầu kiến thức rộng về kinh tế, tài chính và kỹ năng lãnh đạo.</p>
             </div>
@@ -134,7 +104,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Giới thiệu ngành nghề | Thiết kế hiện đại</p>
+        <p>&copy; 2024 Giới thiệu ngành nghề</p>
     </footer>
 </body>
 </html>
