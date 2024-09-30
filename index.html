@@ -3,220 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu Nghề nghiệp</title>
+    <title>Giới thiệu các ngành nghề</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Thư viện Animate on Scroll -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <style>
-        * {
+        body {
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f7f9fc;
+            background-color: #f8f9fa;
             color: #333;
         }
         header {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 20px 0;
+            background-image: url('https://source.unsplash.com/1600x900/?business,finance');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            font-size: 2.5em;
+            font-size: 2.5rem;
             font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         nav {
-            background-color: #34495e;
-            display: flex;
-            justify-content: center;
-            padding: 15px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #1abc9c;
+            padding: 15px;
+            text-align: center;
         }
         nav a {
-            color: #fff;
-            padding: 12px 30px;
-            margin: 0 10px;
+            color: white;
+            margin: 0 20px;
             text-decoration: none;
-            font-size: 1.1em;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            font-weight: 500;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            background-color: #1abc9c;
-            color: #fff;
-            border-radius: 25px;
+            color: #ecf0f1;
         }
-        .banner {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?office,finance') no-repeat center center/cover;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-        }
-        .banner h2 {
-            font-size: 3em;
-            font-weight: 400;
-            letter-spacing: 1px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            animation: fadeIn 2s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .content-section {
-            padding: 60px 20px;
-            text-align: center;
-            background-color: #fff;
-        }
-        .content-section h2 {
-            color: #2c3e50;
-            font-size: 2em;
-            margin-bottom: 20px;
-            animation: slideUp 1s ease-in-out;
-        }
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        .content-section p {
-            max-width: 800px;
-            margin: 0 auto 40px;
-            font-size: 1.1em;
-            line-height: 1.8;
-            color: #7f8c8d;
-        }
-        .cta-button {
-            background-color: #1abc9c;
-            color: #fff;
-            padding: 12px 40px;
-            font-size: 1em;
-            text-transform: uppercase;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .cta-button:hover {
-            background-color: #16a085;
-            transform: scale(1.05);
-        }
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+        section {
             padding: 40px 20px;
-            background-color: #ecf0f1;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #2980b9;
+        }
+        .career {
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .card {
-            background-color: #fff;
+            background-color: white;
             padding: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeIn 1s ease forwards;
         }
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .card h3 {
-            font-size: 1.5em;
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-        .card p {
-            color: #7f8c8d;
-            line-height: 1.7;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
         }
         footer {
-            background-color: #34495e;
-            color: #fff;
+            background-color: #2c3e50;
+            color: white;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
         footer p {
-            font-size: 0.9em;
-            letter-spacing: 1px;
+            margin: 0;
+            font-weight: 300;
         }
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .banner h2 {
-                font-size: 2em;
-            }
-            nav a {
-                padding: 10px 15px;
-                font-size: 0.9em;
-            }
+        .career-icon {
+            font-size: 3rem;
+            color: #2980b9;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Giới thiệu về các ngành nghề</h1>
+    </header>
 
-<header>
-    <h1>Giới Thiệu Nghề Nghiệp: Kế Toán, Tài Chính & Quản Trị</h1>
-</header>
+    <nav>
+        <a href="#ke-toan">Kế toán</a>
+        <a href="#kiem-toan">Kiểm toán</a>
+        <a href="#tai-chinh-ngan-hang">Tài chính - Ngân hàng</a>
+        <a href="#quan-tri-kinh-doanh">Quản trị Kinh doanh</a>
+    </nav>
 
-<nav>
-    <a href="#home">Trang chủ</a>
-    <a href="#ke-toan">Kế Toán & Kiểm Toán</a>
-    <a href="#tai-chinh">Tài Chính & Ngân Hàng</a>
-    <a href="#quan-tri">Quản Trị Kinh Doanh</a>
-    <a href="#lien-he">Liên Hệ</a>
-</nav>
+    <div class="container">
+        <section id="ke-toan" class="career">
+            <div class="card">
+                <div class="career-icon">💼</div>
+                <h2>Kế toán</h2>
+                <p>Kế toán là công việc ghi chép, xử lý và phân tích thông tin tài chính của doanh nghiệp. Kế toán viên có nhiệm vụ tổng hợp số liệu và lập báo cáo tài chính.</p>
+            </div>
+        </section>
 
-<section class="banner">
-    <h2 data-aos="fade-up">Khám phá những cơ hội nghề nghiệp tương lai</h2>
-</section>
+        <section id="kiem-toan" class="career">
+            <div class="card">
+                <div class="career-icon">🧾</div>
+                <h2>Kiểm toán</h2>
+                <p>Kiểm toán là quá trình kiểm tra và xác nhận tính chính xác của báo cáo tài chính của một tổ chức. Kiểm toán viên làm việc để đảm bảo rằng các báo cáo này phản ánh đúng tình hình tài chính của tổ chức.</p>
+            </div>
+        </section>
 
-<section class="content-section" id="ke-toan">
-    <h2 data-aos="fade-right">Kế Toán & Kiểm Toán</h2>
-    <p>Ngành kế toán và kiểm toán đóng vai trò quan trọng trong việc đảm bảo tính minh bạch và hiệu quả của hệ thống tài chính của mọi doanh nghiệp.</p>
-    <a href="#" class="cta-button" data-aos="fade-up">Tìm hiểu thêm</a>
-</section>
+        <section id="tai-chinh-ngan-hang" class="career">
+            <div class="card">
+                <div class="career-icon">💰</div>
+                <h2>Tài chính - Ngân hàng</h2>
+                <p>Ngành Tài chính - Ngân hàng bao gồm các hoạt động liên quan đến đầu tư, quản lý tài sản, phân tích tài chính, và điều hành ngân hàng. Đây là một lĩnh vực đa dạng và có nhiều cơ hội phát triển.</p>
+            </div>
+        </section>
 
-<section class="content-section" id="tai-chinh">
-    <h2 data-aos="fade-left">Tài Chính & Ngân Hàng</h2>
-    <p>Lĩnh vực tài chính và ngân hàng không chỉ quản lý dòng tiền, mà còn giúp tăng trưởng kinh tế và phát triển bền vững cho các doanh nghiệp và quốc gia.</p>
-    <a href="#" class="cta-button" data-aos="fade-up">Khám phá ngay</a>
-</section>
-
-<section class="content-section" id="quan-tri">
-    <h2 data-aos="fade-right">Quản Trị Kinh Doanh</h2>
-    <p>Quản trị kinh doanh là trái tim của mọi tổ chức, giúp doanh nghiệp lập kế hoạch, quản lý nhân sự, điều phối sản xuất và phát triển chiến lược.</p>
-    <a href="#" class="cta-button" data-aos="fade-up">Xem thêm</a>
-</section>
-
-<section class="card-container">
-    <div class="card" data-aos="flip-left">
-        <h3>Kế Toán & Kiểm Toán</h3>
-        <p>Đảm bảo hệ thống tài chính doanh nghiệp minh bạch và tuân thủ các quy định pháp luật.</p>
+        <section id="quan-tri-kinh-doanh" class="career">
+            <div class="card">
+                <div class="career-icon">📊</div>
+                <h2>Quản trị Kinh doanh</h2>
+                <p>Quản trị Kinh doanh là lĩnh vực nghiên cứu và áp dụng các phương pháp quản lý nhằm đạt được hiệu quả cao trong hoạt động kinh doanh. Ngành này yêu cầu kiến thức rộng về kinh tế, tài chính và kỹ năng lãnh đạo.</p>
+            </div>
+        </section>
     </div>
-    <div class="card" data-aos="flip-right">
-        <h3>Tài Chính & Ngân Hàng</h3>
-        <p>Đánh giá và quản lý dòng tiền, đảm bảo sự phát triển bền vững của nền kinh tế.</p>
-    </div>
-    <div class="card" data-aos="flip-up">
-        <h3>Quản Trị Kinh Doanh</h3>
-        <p>Điều hành doanh nghiệp, lập chiến lược và quản lý nhân sự, tài nguyên.</p>
-    </div>
-</section>
 
-<footer>
-    <p>© 2024 Giới Thiệu Nghề Nghiệp. Mọi quyền được bảo lưu.</p>
-</footer>
-
-<!-- Thêm AOS thư viện -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <footer>
+        <p>&copy; 2024 Giới thiệu ngành nghề | Thiết kế hiện đại</p>
+    </footer>
 </body>
 </html>
