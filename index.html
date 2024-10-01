@@ -190,6 +190,50 @@
     </style>
 </head>
 <body>
+    <!-- Modal cho Kế Toán & Kiểm Toán -->
+<div id="keToanModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeKeToan">&times;</span>
+    <h2>Kế Toán & Kiểm Toán</h2>
+    <p>Ngành kế toán là quá trình ghi chép, phân tích và báo cáo các giao dịch tài chính của tổ chức hay cá nhân, giúp quản lý và đưa ra quyết định về các vấn đề kinh tế, tài chính.</p>
+    <p>Ngành kiểm toán thu thập, đánh giá và xác thực tính chính xác của báo cáo số liệu, từ đó giúp cải thiện hiệu quả hoạt động của doanh nghiệp.</p>
+    <p>Các kỹ năng cần thiết: kiến thức chuyên môn, kỹ năng phân tích, sử dụng phần mềm kế toán, và phẩm chất trung thực, cẩn thận.</p>
+    <p><b>Mức lương:</b> Mức lương kế toán từ 4-8 triệu/tháng, có thể lên tới hơn 10 triệu với kinh nghiệm. Kiểm toán viên có thể có mức lương từ 7-15 triệu/tháng, tăng theo kinh nghiệm.</p>
+    <p><b>Trường đào tạo:</b> Một số trường đào tạo ngành Kế toán & Kiểm Toán nổi bật như Đại học Kinh tế - Luật, Đại học Ngoại Thương, và Đại học Kinh tế TP.HCM.</p>
+  </div>
+</div>
+
+<!-- Thêm AOS thư viện -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+
+    // Get modal element
+    var keToanModal = document.getElementById("keToanModal");
+
+    // Get open modal button
+    var keToanBtn = document.getElementById("keToanBtn");
+
+    // Get close button
+    var closeKeToan = document.getElementById("closeKeToan");
+
+    // Listen for open click
+    keToanBtn.onclick = function() {
+        keToanModal.style.display = "block";
+    }
+
+    // Listen for close click
+    closeKeToan.onclick = function() {
+        keToanModal.style.display = "none";
+    }
+
+    // Close modal when clicking outside of modal
+    window.onclick = function(event) {
+        if (event.target == keToanModal) {
+            keToanModal.style.display = "none";
+        }
+    }
+</script>
 
 <header>
     <h1>Giới Thiệu Nghề Nghiệp: Kế Toán, Tài Chính & Quản Trị</h1>
