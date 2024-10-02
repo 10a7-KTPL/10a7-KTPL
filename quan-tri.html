@@ -28,7 +28,89 @@
 </head>
 <body>
     <h1>Quản Trị Kinh Doanh</h1>
-    <p>Thông tin về ngành Quản Trị Kinh Doanh sẽ được thêm tại đây.</p>
+    <p>
+        <!-- Modal cho Quản Trị Kinh Doanh -->
+<div id="quanTriModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeQuanTri">&times;</span>
+    <h2>Ngành Quản Trị Kinh Doanh</h2>
+    <p><b>I. Khái niệm</b></p>
+    <p>Quản trị kinh doanh là quá trình lập kế hoạch, tổ chức, điều hành và kiểm soát các hoạt động của một tổ chức nhằm đạt được các mục tiêu đã đề ra. Lĩnh vực này liên quan đến các hoạt động như kế toán, tiếp thị, và tài chính.</p>
+
+    <p><b>II. Đặc điểm của quản trị kinh doanh</b></p>
+    <ul>
+      <li>Hoạt động quản trị kinh doanh mang tính liên tục và phức tạp</li>
+      <li>Luôn phải thích ứng với sự biến đổi của môi trường</li>
+    </ul>
+
+    <p><b>III. Năng lực cần có</b></p>
+    <ul>
+      <li>Kỹ năng lãnh đạo, truyền cảm hứng và hướng dẫn đội ngũ nhân viên</li>
+      <li>Kỹ năng ra quyết định và giải quyết vấn đề</li>
+      <li>Kỹ năng giao tiếp hiệu quả và phân tích dữ liệu</li>
+      <li>Tư duy chiến lược và khả năng thích ứng</li>
+    </ul>
+
+    <p><b>IV. Phẩm chất</b></p>
+    <ul>
+      <li>Đam mê kinh doanh, quyết đoán, và không ngại khó khăn</li>
+      <li>Linh hoạt và nhạy bén với thực tế thị trường</li>
+      <li>Khả năng làm việc với con số và dữ liệu</li>
+      <li>Thích ứng nhanh chóng với thay đổi công nghệ và môi trường kinh doanh</li>
+    </ul>
+
+    <p><b>V. Đại học đào tạo ngành Quản trị kinh doanh</b></p>
+    <ul>
+      <li><b>Đại học Kinh tế TP.HCM (UEH)</b>: Các tổ hợp xét tuyển và phương thức tuyển sinh như xét học bạ, thi tốt nghiệp THPT, xét điểm thi năng lực.</li>
+      <li><b>Đại học Ngoại Thương (FTU)</b>: Xét tuyển dựa trên kết quả học tập, các chứng chỉ ngoại ngữ và kỳ thi tốt nghiệp THPT.</li>
+    </ul>
+
+    <p><b>VI. Xu hướng nghề nghiệp</b></p>
+    <ul>
+      <li><b>Lĩnh vực kinh doanh và marketing</b>: Nhân viên kinh doanh, quản lý sản phẩm, nhân viên marketing.</li>
+      <li><b>Cấp cao</b>: Quản lý dự án, quản lý chuỗi cung ứng, quản lý chất lượng.</li>
+      <li><b>Phân tích và tư vấn</b>: Phân tích kinh doanh, tư vấn quản trị.</li>
+    </ul>
+
+    <p><b>Các nghề trong ngành quản trị kinh doanh:</b></p>
+    <ul>
+      <li>Quản trị tài chính, quản trị chiến lược, quản trị rủi ro, tiếp thị.</li>
+      <li>Quản lý sản phẩm, quản lý dự án, quản lý chuỗi cung ứng.</li>
+    </ul>
+
+    <p><b>Kế toán và tiếp thị</b>: Quản lý tài chính, phân tích chi phí, tiếp thị sản phẩm và dịch vụ.</p>
+  </div>
+</div>
+
+<script>
+    // Get modal element
+    var quanTriModal = document.getElementById("quanTriModal");
+
+    // Get open modal button
+    var openQuanTri = document.getElementById("openQuanTri");
+
+    // Get close button
+    var closeQuanTri = document.getElementById("closeQuanTri");
+
+    // Open modal when button is clicked
+    openQuanTri.onclick = function() {
+        quanTriModal.style.display = "block";
+    }
+
+    // Close modal when (x) is clicked
+    closeQuanTri.onclick = function() {
+        quanTriModal.style.display = "none";
+    }
+
+    // Close modal when clicking outside of modal
+    window.onclick = function(event) {
+        if (event.target == quanTriModal) {
+            quanTriModal.style.display = "none";
+        }
+    }
+</script>
+
+    </p>
     <a href="index.html">Quay lại trang chủ</a>
 </body>
 </html>
