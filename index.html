@@ -191,8 +191,6 @@
 </head>
 <body>
     
-
-
 <header>
     <h1>Giới Thiệu Nghề Nghiệp: Kế Toán, Tài Chính & Quản Trị</h1>
 </header>
@@ -211,19 +209,22 @@
 <section class="content-section" id="ke-toan">
     <h2 data-aos="fade-right">Kế Toán & Kiểm Toán</h2>
     <p>Ngành kế toán và kiểm toán đóng vai trò quan trọng trong việc đảm bảo tính minh bạch và hiệu quả của hệ thống tài chính của mọi doanh nghiệp.</p>
-    <button class="cta-button" id="keToanBtn">Tìm hiểu thêm</button>
+    <!-- Link to the subpage for Kế Toán & Kiểm Toán -->
+    <a href="ke-toan.html" class="cta-button">Tìm hiểu thêm</a>
 </section>
 
 <section class="content-section" id="tai-chinh">
     <h2 data-aos="fade-left">Tài Chính & Ngân Hàng</h2>
     <p>Lĩnh vực tài chính và ngân hàng không chỉ quản lý dòng tiền, mà còn giúp tăng trưởng kinh tế và phát triển bền vững cho các doanh nghiệp và quốc gia.</p>
-    <button class="cta-button" id="taiChinhBtn">Khám phá ngay</button>
+    <!-- Link to the subpage for Tài Chính & Ngân Hàng -->
+    <a href="tai-chinh.html" class="cta-button">Khám phá ngay</a>
 </section>
 
 <section class="content-section" id="quan-tri">
     <h2 data-aos="fade-right">Quản Trị Kinh Doanh</h2>
     <p>Quản trị kinh doanh là trái tim của mọi tổ chức, giúp doanh nghiệp lập kế hoạch, quản lý nhân sự, điều phối sản xuất và phát triển chiến lược.</p>
-    <button class="cta-button" id="quanTriBtn">Xem thêm</button>
+    <!-- Link to the subpage for Quản Trị Kinh Doanh -->
+    <a href="quan-tri.html" class="cta-button">Xem thêm</a>
 </section>
 
 <section class="card-container">
@@ -245,91 +246,10 @@
     <p>© 2024 Giới Thiệu Nghề Nghiệp. Mọi quyền được bảo lưu.</p>
 </footer>
 
-<!-- Modal cho Kế Toán & Kiểm Toán -->
-<div id="keToanModal" class="modal">
-  <div class="modal-content">
-    <span class="close" id="closeKeToan">&times;</span>
-    <h2>Kế Toán & Kiểm Toán</h2>
-    <p>Thông tin chi tiết về ngành Kế toán và Kiểm toán...</p>
-  </div>
-</div>
-
-<!-- Modal cho Tài Chính & Ngân Hàng -->
-<div id="taiChinhModal" class="modal">
-  <div class="modal-content">
-    <span class="close" id="closeTaiChinh">&times;</span>
-    <h2>Tài Chính & Ngân Hàng</h2>
-    <p>Thông tin chi tiết về ngành Tài chính và Ngân hàng...</p>
-  </div>
-</div>
-
-<!-- Modal cho Quản Trị Kinh Doanh -->
-<div id="quanTriModal" class="modal">
-  <div class="modal-content">
-    <span class="close" id="closeQuanTri">&times;</span>
-    <h2>Quản Trị Kinh Doanh</h2>
-    <p>Thông tin chi tiết về ngành Quản trị Kinh doanh...</p>
-  </div>
-</div>
-
 <!-- Thêm AOS thư viện -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
     AOS.init();
-
-    // Get modal elements
-    var keToanModal = document.getElementById("keToanModal");
-    var taiChinhModal = document.getElementById("taiChinhModal");
-    var quanTriModal = document.getElementById("quanTriModal");
-
-    // Get button elements
-    var keToanBtn = document.getElementById("keToanBtn");
-    var taiChinhBtn = document.getElementById("taiChinhBtn");
-    var quanTriBtn = document.getElementById("quanTriBtn");
-
-    // Get close elements
-    var closeKeToan = document.getElementById("closeKeToan");
-    var closeTaiChinh = document.getElementById("closeTaiChinh");
-    var closeQuanTri = document.getElementById("closeQuanTri");
-
-    // Show modal when button is clicked
-    keToanBtn.onclick = function() {
-        keToanModal.style.display = "block";
-    }
-
-    taiChinhBtn.onclick = function() {
-        taiChinhModal.style.display = "block";
-    }
-
-    quanTriBtn.onclick = function() {
-        quanTriModal.style.display = "block";
-    }
-
-    // Close modal when (x) is clicked
-    closeKeToan.onclick = function() {
-        keToanModal.style.display = "none";
-    }
-
-    closeTaiChinh.onclick = function() {
-        taiChinhModal.style.display = "none";
-    }
-
-    closeQuanTri.onclick = function() {
-        quanTriModal.style.display = "none";
-    }
-
-    // Close modal when clicking outside the modal
-    window.onclick = function(event) {
-        if (event.target == keToanModal) {
-            keToanModal.style.display = "none";
-        }
-        if (event.target == taiChinhModal) {
-            taiChinhModal.style.display = "none";
-        }
-        if (event.target == quanTriModal) {
-            quanTriModal.style.display = "none";
-        }
-    }
 </script>
 
 </body>
