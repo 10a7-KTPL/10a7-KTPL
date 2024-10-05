@@ -108,7 +108,16 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             padding: 40px 20px;
-            background: <img src="https://github.com/username/images-repo/blob/main/image.png?raw=true" alt="Hình ảnh mới" style="width:100%; height:auto;">
+            background-image: url('images/z5900299420919_f9ca4a97ee89c161ff720abc391fad3b.jpg');
+    background-size: cover;   /* Đảm bảo ảnh phủ toàn bộ card */
+    background-position: center; /* Đặt vị trí trung tâm của ảnh */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    padding: 20px;  /* Khoảng cách bên trong để ảnh không đè lên nội dung */
+    border-radius: 10px; /* Bo tròn các góc */
+    color: white; /* Thay đổi màu văn bản nếu cần để dễ đọc */
+            max-width: 600px;  /* Đặt chiều rộng tối đa của card container */
+    height: auto; /* Tự động điều chỉnh chiều cao dựa trên nội dung */
+    margin: 0 auto; /* Canh giữa trên trang */
         }
         .card {
             background-color: #fff;
@@ -216,6 +225,18 @@
     right: 10px;
     z-index: 1000; /* Đảm bảo logo hiển thị trên các phần tử khác */
 }
+        .logo-container {
+    position: fixed; /* Giữ logo luôn ở vị trí cố định khi cuộn trang */
+    top: 10px;      /* Cách mép trên 10px */
+    right: 10px;    /* Cách mép phải 10px */
+    z-index: 1000;  /* Đảm bảo logo hiển thị trên các phần tử khác */
+}
+
+.logo-container img {
+    width: 150px;  /* Đặt kích thước logo, bạn có thể thay đổi tùy ý */
+    height: auto;
+}
+
     </style>
 </head>
 <body>
@@ -223,7 +244,9 @@
 <header>
     <h1>Giới Thiệu Nghề Nghiệp: Kế Toán, Tài Chính & Quản Trị</h1>
 </header>
-
+<div class="logo-container">
+    <img src="images/z5900253696322_0fa6408e20d1147c683513f8834e957b.jpg" alt="Logo Đom Đóm 10A7">
+</div>
 <nav>
     <a href="#home">Trang chủ</a>
     <a href="#ke-toan">Kế Toán & Kiểm Toán</a>
